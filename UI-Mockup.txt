@@ -1,0 +1,127 @@
+UI Mockup for Event Scheduler
+1. Dashboard (Event List)
+Purpose: The dashboard displays all scheduled events in a tabular format for easy viewing and management.
+
+Components:
+
+Event List: A table showing all events with the following columns:
+
+Event Name: The name of the event (e.g., "Team Meeting").
+
+Start Date: The date when the event is scheduled to begin (e.g., "2025-04-15").
+
+Start Time: The time when the event will start (e.g., "10:00 AM").
+
+Duration: The duration of the event (e.g., "1 hour").
+
+Repeat Days: Days of the week the event repeats, if applicable (e.g., "Monday, Wednesday").
+
+Actions: Buttons for "Edit" action.
+
+Functionality:
+
+The table is scrollable to accommodate multiple events.
+
+Each event is clickable, with the ability to edit it.
+
+There’s a "Create Event" button at the top-right corner of the table to allow users to add new events.
+
+2. Create Event Form
+Purpose: This form allows users to create new events by providing necessary details.
+
+Components:
+
+Event Name (Text Input): A field where users input the name of the event.
+
+Example: "Weekly Sync Meeting"
+
+Start Date (Date Picker): A field for selecting the start date of the event.
+
+Example: "2025-04-15"
+
+Start Time (Time Picker): A field for selecting the start time of the event.
+
+Example: "10:00 AM"
+
+Duration (Text Input or Number Input): A field for specifying the duration of the event.
+
+Example: "1 hour"
+
+Repeat Days (Checkboxes): A set of checkboxes for users to select the days of the week on which the event should repeat. Days like "Monday", "Wednesday", etc., should be listed with checkboxes.
+
+Example: "Monday", "Wednesday"
+
+Submit Button: A button to submit the form and create the event.
+
+Cancel Button: A button to close the form and discard changes.
+
+Behavior:
+
+When the "Create Event" button is clicked, the form should appear in a modal or as a full-page form.
+
+The user can choose to create a one-time event or a recurring event (by selecting days in the Repeat Days section).
+
+On successful submission, the event is added to the event list and the form is closed.
+
+3. Event Update Form
+Purpose: This form allows users to update the details of an existing event.
+
+Components:
+
+Event Name (Text Input): Pre-filled with the current event name, editable.
+
+Start Date (Date Picker): Pre-filled with the current event's start date, editable.
+
+Start Time (Time Picker): Pre-filled with the current event's start time, editable.
+
+Duration (Text Input or Number Input): Pre-filled with the current event's duration, editable.
+
+Repeat Days (Checkboxes): Pre-filled with the days on which the event repeats, editable. If the event doesn't repeat, no days should be selected.
+
+Save Button: A button to save changes to the event.
+
+Cancel Button: A button to discard changes and close the form.
+
+Behavior:
+
+When the "Edit" button next to an event is clicked, this form should open, with the fields pre-filled with the event’s existing details.
+
+The user can modify the event details and submit the changes.
+
+On successful submission, the updated event appears in the event list.
+
+If there are any conflicts with other scheduled events (e.g., same date and time), an error message will be displayed, and the update will not occur.
+
+4. Event Conflict Warning
+Purpose: To notify users when a new event conflicts with an existing event.
+
+Components:
+
+Conflict Alert: A red-colored alert box that shows when an event conflict occurs.
+
+Message: "Conflict detected! An event is already scheduled for this time."
+
+Functionality:
+
+If a user tries to create or update an event that conflicts with an existing one (same start time and date), the conflict alert will be displayed.
+
+The form will not allow the user to submit the event until the conflict is resolved.
+
+
+5. Responsive Design
+Purpose: The UI should be responsive, adjusting to different screen sizes and devices.
+
+Behavior:
+
+On smaller screens (e.g., mobile devices), the event list may be presented as a scrolling list with the event details shown in a card-style layout.
+
+The "Create Event" button should be accessible on all screen sizes, possibly changing position or appearance on mobile.
+
+The form inputs should be easy to interact with on smaller screens (e.g., date and time pickers optimized for mobile).
+
+6. General Styling and Themes
+Color Scheme: A simple and professional color scheme, using colors like blue for buttons and headers, with red for error messages and warnings.
+
+Typography: Clear and readable fonts, with larger fonts for headers and smaller, more concise text for event details.
+
+Button Design: Buttons should be distinct, with rounded corners and hover/active states.
