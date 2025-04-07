@@ -16,3 +16,5 @@ venv/
 
 # MacOS specific files
 .DS_Store
+
+events.json
